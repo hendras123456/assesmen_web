@@ -1,0 +1,340 @@
+/* jangan di ubah */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Jangan otak atik dari atas sampai sini */
+
+
+/* -- Tubuh -- */
+.container{
+    background-color: rgb(54, 54, 84);
+    height: 100vh;
+    
+}
+
+/* -- kepala -- */
+.container header{
+    margin-left:20px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 5px 0;
+}
+
+/* Penampung kotak utama / penampung antara sidebar dan list item*/
+.kotak{
+    height: 80vh;
+    background-color: #F3F3F3;
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+
+}
+
+
+/* <--------------------------------SIDEBAR--------------------------------> */
+.kiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.kiri button {
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(56, 56, 88);
+    outline: none;
+    border: 4px solid rgb(0, 0, 0); /* Menambahkan border dengan lebar 2px dan warna merah */
+    border-radius: 90px;
+}
+
+
+.satu {
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    text-align: center;
+    background-color:  rgb(56, 56, 88);
+    border: 4px solid rgb(0, 0, 0); /* Mengatur warna merah pada garis dengan lebar 2px */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.satu option{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+.dua span {
+    border-top: 2px solid rgb(0, 0, 0); /* Warna merah pada garis atas */
+    border-bottom: 2px solid rgb(0, 255, 0); /* Warna biru pada garis bawah */
+    margin-left: 130px;
+}
+
+/* <------------------------------ TUTUP SIDEBAR ------------------------------> */
+
+/* <---------------- PENAMPUNG CLASS BARU / BARANG YANG DI PILIH ---------------------> */
+
+.belanja{
+    margin-left: 5px;
+    height: 60vh;
+    border: 2px solid #ffffff;
+    width: 390px;
+    overflow-y: scroll;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.belanja .barang {
+    margin-bottom: 3px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin-right: -6px; /* Atur jarak dari sisi kanan sebesar 20px, bisa disesuaikan dengan kebutuhan */
+}
+
+.barang .normal{
+    font-size: smaller;
+}
+
+.barang img{
+    max-width: 20px;
+}
+
+.barang button{
+    padding: 0;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform ease-in-out 0.3;
+}
+
+.barang button:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+.barang button span{
+    font-size: 30px;
+}
+
+.nav_kiri {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(56, 56, 88);
+    border-radius: 100px;
+    width: 1300px;
+    border: 4px solid black;
+    line-height: 1.5; /* Adjust line height */
+}
+
+
+
+
+
+/* <-------------------------------- TUTUP CLASS BARU --------------------------------> */
+
+/* <-------------------------------- HARGA KESELURUHAN BARANG --------------------------------> */
+
+.jajan{
+    padding: 2em 1em 0 1em;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px;
+    width: 100%;
+}
+
+.pay {
+    font-size: 12px;
+    background-color: rgb(56, 56, 88);
+    padding: 2px;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid rgb(0, 0, 0); /* Menambahkan border dengan lebar 2px dan warna merah */
+}
+
+
+
+/* <-------------------------------- TUTUP HARGA BARANG --------------------------------> */
+
+/* <-------------------------------- KOTAK KANAN / MAIN CONTENT --------------------------------> */
+.kanan{
+    width: 1200px;
+    margin-right: 5px;
+}
+
+/* Navbar */
+.kanan nav{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+/* ukuran icon */
+.kanan nav .nav_kanan span{
+    font-size: 27px;
+}
+
+/* jangan di ubah */
+.kanan nav .nav_kanan{
+    display: flex;
+    align-items: center;
+}
+
+.kanan nav .nav_kanan input{
+    padding: 5px
+}
+
+#sortByName, #searchIcon{
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#sortByName:hover,  #searchIcon:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* Tutup navbar */
+
+/* jangan di ubah */
+.kanan section{
+    border: 3px solid #000000;
+    border-radius: 20px;
+    height: 72vh;
+    overflow-y: scroll;
+
+}
+
+/* Atur foto */
+.kanan section .isi .foto img {
+    width: 85%;
+    margin: 5px;
+    height: 10vh;
+    border: 2px solid black; /* Menambahkan kotak di sekeliling gambar dengan warna hitam */
+    border-radius: 10px; /* Mengatur sudut border */
+}
+
+/* Atur kotak list item */
+.kanan section .isi{
+    margin: 5px;
+    border: 2px solid #010101;
+    border-radius: 10px;
+    width: 130px;
+    height: 133px;
+    text-align: center;
+    float: left;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.kanan section .isi:hover{
+    transform: translateY(5px);
+}
+
+/* huruf di dalem list item */
+.kanan section .isi p{
+    font-size: 12px;
+    margin-bottom: 1px;
+    font-weight: 500;
+    font-family: Georgia, 'Merriweather', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+/* Harga barang */
+.kanan section .isi h1 {
+    font-size: 17px;
+    width: 100%;
+    border-top: 2px solid #000; /* Menambahkan garis atas dengan ketebalan 2px */
+    border-bottom: 2px solid #000000; /* Menambahkan garis bawah dengan ketebalan 2px */
+    padding-top: 1px; /* Jarak antara teks dan garis atas */
+    padding-bottom: 2px; /* Jarak antara teks dan garis bawah */
+    font-family: 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+
+/* <--------------------------------TUTUP MAIN CONTENT--------------------------------> */
+
+/* <---------------- FOOTER / ITEM PALING BAWAH YANG TULISAN READY SAMA PAYMENT -----------------> */
+
+.payment{
+    height: 8vh;
+    background-color: white;
+    position: relative;
+}
+
+.payment button {
+    position: absolute;
+    left: 240px; /* Menggunakan left untuk menggeser dari kiri */
+    padding: 10px 1%; /* Mengurangi padding untuk mengurangi ukuran tombol */
+    gap: 4px;
+    outline: none;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 7px; /* Menambahkan satuan (px) untuk nilai border-radius */
+    background-color: rgb(67, 23, 153);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+
+
+.container footer{
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: small;
+}
+
+/* <--------------------------------TUTUP FOOTER--------------------------------> */
+
+/* <-------------------------------- WEBKIT --------------------------------> */
+html::-webkit-scrollbar{
+    display: none;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* <----------------------- FITUR PRINT ----------------------------------> */
+@media print {
+    body {
+      visibility: hidden;
+    }
+    #section-to-print {
+      visibility: visible;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+  }
